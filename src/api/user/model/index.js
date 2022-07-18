@@ -11,9 +11,12 @@ class User extends Model {
       },
       {
         sequelize,
+        freezeTableName: false,
       }
     );
   }
+
+  static associate(models) {}
 }
 
 module.exports = User;
